@@ -117,7 +117,7 @@ input, select, textarea {
 
 		a:hover {
 			border-bottom-color: transparent;
-			color: #4acaa8 !important;
+			color: #459DB3 !important;
 		}
 
 	strong, b {
@@ -1785,7 +1785,7 @@ input, select, textarea {
 	}
 
 	header.major h2 {
-		color: #4acaa8;
+		color: #459DB3;
 		font-size: 3.5em;
 	}
 
@@ -1848,7 +1848,7 @@ input, select, textarea {
 		input[type="email"]:focus,
 		select:focus,
 		textarea:focus {
-			border-color: #4acaa8;
+			border-color: #459DB3;
 		}
 
 	select {
@@ -1953,7 +1953,7 @@ input, select, textarea {
 
 		input[type="checkbox"]:focus + label:before,
 		input[type="radio"]:focus + label:before {
-			border-color: #4acaa8;
+			border-color: #459DB3;
 		}
 
 	input[type="checkbox"] + label:before {
@@ -2188,8 +2188,10 @@ input, select, textarea {
 			}
 
 		.image.avatar {
-			border-radius: 100%;
+			border-radius: 50%;
 			overflow: hidden;
+			background-color: white;
+			height: 60%;
 		}
 
 			.image.avatar img {
@@ -2402,7 +2404,7 @@ input, select, textarea {
 			}
 
 			ul.feature-icons li:before {
-				background: #4acaa8;
+				background: #459DB3;
 				border-radius: 100%;
 				color: #ffffff;
 				display: block;
@@ -2618,7 +2620,7 @@ input, select, textarea {
 		input[type="reset"].primary,
 		input[type="button"].primary,
 		.button.primary {
-			background-color: #4acaa8;
+			background-color: #459DB3;
 			color: #ffffff !important;
 		}
 
@@ -2626,7 +2628,7 @@ input, select, textarea {
 			input[type="reset"].primary:hover,
 			input[type="button"].primary:hover,
 			.button.primary:hover {
-				background-color: #5ed0b1;
+				background-color: #66CBDF;
 			}
 
 			input[type="submit"].primary:active,
@@ -2651,8 +2653,54 @@ input, select, textarea {
 		}
 
 /* Features */
+.features article {
+    display: flex;
+    flex-wrap: wrap;
+	border-top: solid 3px #f4f4f4;
+		margin-bottom: 2.25em;
+		padding-top: 2.25em;
+}
 
-	.features article {
+.features article .glide {
+    flex: 1 1 100%; /* Take up 100% of the container width */
+    max-width: 100%; /* Ensure glide takes up full width */
+    margin-bottom: 20px; /* Add margin for spacing */
+    text-align: center; /* Center the content */
+}
+
+.features article .glide img {
+    width: 100%; /* Set image width to 100% */
+    height: auto; /* Let the height adjust proportionally */
+}
+
+.features article .inner {
+    flex: 1 1 100%; /* Take up 100% of the container width */
+    max-width: 100%; /* Ensure inner takes up full width */
+}
+
+.features article .image {
+	display: inline-block;
+	padding-right: 2.5em;
+	vertical-align: middle;
+	width: 48%;
+}
+
+	.features article .image img {
+		display: block;
+		width: 100%;
+	}
+
+@media screen and (max-width: 480px) {
+    .features article .glide,
+    .features article .inner {
+        flex: 1 1 100%; /* On smaller screens, make them take up 100% width */
+        max-width: 100%; /* Ensure they take up 100% width */
+        margin-right: 0; /* Remove right margin on smaller screens */
+        margin-top: 0; /* Remove top margin on smaller screens */
+    }
+}
+
+	/* .features article {
 		border-top: solid 3px #f4f4f4;
 		margin-bottom: 2.25em;
 		padding-top: 2.25em;
@@ -2669,12 +2717,23 @@ input, select, textarea {
 			vertical-align: middle;
 			width: 48%;
 		}
-
+		
 			.features article .image img {
 				display: block;
 				width: 100%;
 			}
-
+			.features article .glide{
+				width: 50%;
+			}
+			@media screen and (max-width: 480px) {
+				
+			.features article .glide{
+				display: inline-block;
+			padding-right: 2.5em;
+			vertical-align: middle;
+			width: 48%;
+			}
+			}
 		.features article .inner {
 			display: inline-block;
 			vertical-align: middle;
@@ -2683,7 +2742,7 @@ input, select, textarea {
 
 			.features article .inner > :last-child {
 				margin-bottom: 0;
-			}
+			} */
 
 /* Header */
 
@@ -2700,7 +2759,8 @@ input, select, textarea {
 		-webkit-justify-content: space-between;
 		-ms-justify-content: space-between;
 		justify-content: space-between;
-		background: #4acaa8;
+		/* background: #4acaa8; */
+		background: #459DB3;
 		color: #d2f2e9;
 		height: 100%;
 		overflow-y: auto;
@@ -2808,7 +2868,7 @@ input, select, textarea {
 
 						#header > nav ul li a.active {
 							background: #fff;
-							color: #4acaa8 !important;
+							color: #459DB3 !important;
 						}
 
 					#header > nav ul li:first-child {
@@ -3076,7 +3136,7 @@ input, select, textarea {
 					}
 
 					#titleBar .toggle:before {
-						background: #4acaa8;
+						background: #459DB3;
 						color: #ffffff;
 						content: '\f0c9';
 						display: block;
