@@ -10,13 +10,16 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.core.min.css">
+<script src="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/glide.min.js"></script>
+
 	</head>
 	<body class="is-preload">
 
 		<!-- Header -->
 			<section id="header">
 				<header>
-					<span class="image avatar"><img src="images/Avatar.jpeg" alt="" /></span>
+					<span class="image avatar"><img src="images/profile.png" alt="" /></span>
 					<h1 id="logo"><a href="#">Kinza Shaikh</a></h1>
 					<p>Software engineer <br />
 				</header>
@@ -49,13 +52,22 @@
 								</div>
 								<div class="container">
 									<header class="major">
-										<h2>Hi there, It's Kinza here.</h2>
+										<h2>
+												<a href="" class="typewrite" data-period="2000" data-type='[ "Hi there, Kinza here!", "FullStack Engineer"]'>
+												  <span class="wrap"></span>
+												</a>
+										</h2>
 										<p>Welcome to my Portfolio website.</p>
 									</header>
-									<p>I am Software Engineering Student from Sukkur IBA University, one of top Universities in Pakistan.
-										<br/>My areas of interest are Dekstop Application Development, Website and Webapp Development, Database Administration, Data Structures and Algorithms, Object Oriented Analysis and Design, Data Analysis and Visualization, AI and Machine Learning, Content writing and Data entry.I am also a fast typist and can type upto 50 pages in few hours. I am very keen learner and my hobbies incline me to read books, explore new technologies, watch movies and so on.
-										
+									<p>I'm a passionate software engineer, proudly with a silver medal🥈 from Sukkur IBA University.
+										<br/>With a specialization in full-stack development, my focus primarily revolves around crafting seamless user experiences through captivating frontend solutions. 🚀 I craft captivating user experiences across web, mobile, and desktop platforms.
+										Throughout my journey, I've had the privilege to collaborate with esteemed companies like Sound M and D, Marketplug and Cinqd.
+										I'm eager to explore and innovate in all realms of software development! Let's collaborate and create something remarkable!
+
 										<br/><br/>My portfolio contains my top skills and my previous work.</p>
+										<ul class="actions">
+											<li><input type="button" class="primary" value="Resume" id="resumeButton" /></li>
+										</ul>										
 								</div>
 							</section>
 
@@ -64,19 +76,13 @@
 								<div class="container">
 									<h2>Skills</h2>
 									<ul class="feature-icons">
-										<li class="icon solid fa-code"><h4>Dekstop Application Development</h4>
-											<h5>Java:</h5> JavaFx, Java Swing, AWT, Socket Programming and RMI
-											<h5>C# .Net Framework:</h5> Winform and WPF apps with Entity Framework
-											<h5>VB.Net:</h5> Winform and WPF apps</li>
-										<li class="icon solid fa-book"><h4>Website and Webapp Development</h4>
-											<h5>Front-End:</h5> HTML5, CSS3, Javascript, JQuery, Bootstrap, ReactJS, Material-UI, Semantic-UI, MDB, Bulma
+										<li class="icon solid fa-book"><h4>Website Development</h4>
+											<h5>Front-End:</h5> HTML5, CSS3, Javascript, Typescript JQuery, Bootstrap, ReactJS, Material-UI, Semantic-UI, MDB, Bulma
 											<h5>Back-End:</h5> NodeJS, ExpressJS, Php
 											<h5>Databases:</h5> MongoDB, MySql, PostgreSQL, SQLite, SQL Server DB</li>
-										<li class="icon solid fa-database"><h4>Database Administration</h4>
-											<h5>Database creation, Query Writing, optimization and query evaluation</h5> with MySql, MongoDB, SQL Server, Oracle, PostgreSQL, SQLite, MS Access</li>
-										<li class="icon solid fa-check"><h4>Data Structures and Algorithms</h4>
-											Arrays, Queues, Stacks, Linked Lists, BST, Hash maps, Graphs etc
-											<h5>Sorting:</h5> Bubble, Insertion, Selection,Quick, Merge, Heap sort etc</li>
+											<li class="icon solid fa-database"><h4>Software Testing</h4>
+												<h5>Specialized focus on Quality Assurance (QA)</h5>Website testing, Manual testing, Functional testing, Usability testing, Acceptance testing, Regression testing, Interface testing, APIs testing with postman, UI/UX testing, Compatibility testing</li>
+											
 											<li class="icon solid fa-code"><h4>Object oriented Analysis and design</h4>
 												<h5>I can help you in UML diagrams and SRS document</h5> Diagrams includes: Use case, 
 												Sequence,
@@ -88,13 +94,13 @@
 												State Machine/Chart Diagram,
 												Component Diagram,
 												Data flow Diagram</li>
-											<li class="icon solid fa-bolt"><h4>Data Analysis and Visualization</h4>
-											<h5>Python Programming:</h5> Data visualization, pre-processing and analysis with libraries like Pandas, Numpy, Seaborn etc</li>
-										<li class="icon solid fa-book"><h4>Data Entry</h4>
-											<h5>Fast typing from: </h5> PDF Scanned images, images/screenshots or handwritten.
-											<h5>Typing in: </h5> word, excel or PowerPoint, etc.
-											Transcribing mathematical equations into Word doc.
-											Any kind of typing work from any source.</li>
+												<li class="icon solid fa-database"><h4>Database Administration</h4>
+													<h5>Database creation, Query Writing, optimization and query evaluation</h5> with MySql, MongoDB, SQL Server, Oracle, PostgreSQL, SQLite, MS Access</li>
+												
+												<!-- <li class="icon solid fa-code"><h4>Dekstop Application Development</h4>
+													<h5>Java:</h5> JavaFx, Java Swing, AWT, Socket Programming and RMI
+													<h5>C# .Net Framework:</h5> Winform and WPF apps with Entity Framework
+													<h5>VB.Net:</h5> Winform and WPF apps</li> -->
 									</ul>
 								</div>
 							</section>
@@ -106,71 +112,243 @@
 									<h4>Here are some of my recent projects</h4>
 									<br/>
 									<div class="features">
-
-										<article>
-											<a href="#" class="image"><img src="images/SmartReader.PNG" alt="" /></a>
-											<div class="inner">
-												<h3>Smart Reader</h3>
-												<p>Desktop App developed in C# .NEt framework with Winforms and SQL Server DB. It contains all the features same as nodepad with many additional features. </p>							</div>
+										<article style="display: flex;">
+											<div class="glide glide1">
+												<div class="glide__track" data-glide-el="track">
+													<ul class="glide__slides">
+														<li class="glide__slide">
+															<a href="images/pw7_6.png" class="image" target="_blank">
+																<img src="images/pw7_6.png" alt="" style="width: 500px; height: 280px" />
+															</a>
+														</li>
+														<li class="glide__slide">
+															<a href="images/pw7_2.png" class="image" target="_blank">
+																<img src="images/pw7_2.png" alt="" style="width: 500px; height: 280px" />
+															</a>
+														</li>
+														<li class="glide__slide">
+															<a href="images/pw7_3.png" class="image" target="_blank">
+																<img src="images/pw7_3.png" alt="" style="width: 500px; height: 280px" />
+															</a>
+														</li>  
+														<li class="glide__slide">
+															<a href="images/pw7_4.png" class="image" target="_blank">
+																<img src="images/pw7_4.png" alt="" style="width: 500px; height: 280px" />
+															</a>
+														</li>
+														<li class="glide__slide">
+															<a href="images/pw7_5.png" class="image" target="_blank">
+																<img src="images/pw7_5.png" alt="" style="width: 500px; height: 280px" />
+															</a>
+														</li>
+														<li class="glide__slide">
+															<a href="images/pw7_1.png" class="image" target="_blank">
+																<img src="images/pw7_1.png" alt="" style="width: 500px; height: 280px" />
+															</a>
+														</li>
+													</ul>
+													
+												</div>
+											</div>
+											<div class="inner" style="width: 50%; padding: 0 20px;">
+												<h3>Private Web7</h3>
+												<p>PrivateWeb7 utilizes cutting-edge decentralized, end-to-end encryption to guarantee utmost user privacy and data security. With robust multi-factor authentication and continuous 24/7 monitoring, it effectively thwarts any malicious activities, ensuring a safe and secure online environment. This innovative platform plays a crucial role in protecting online interactions from pervasive data surveillance and privacy breaches, making it indispensable in today's digital landscape.
+													If you'd like to explore the project further, <a href="https://privateweb7.cloud/" target="_blank">you can visit the link</a>.</p>
+											</div>
 										</article>
 
+										<article style="display: flex;">
+											<div class="glide glide2">
+												<div class="glide__track" data-glide-el="track">
+													<ul class="glide__slides">
+														<li class="glide__slide">
+															<a href="images/alumni_website1.PNG" class="image" target="_blank">
+																<img src="images/alumni_website1.PNG" alt="" style="width: 500px; height: 280px" />
+															</a>
+														</li>
+														<li class="glide__slide">
+															<a href="images/alumni_website2.PNG" class="image" target="_blank">
+																<img src="images/alumni_website2.PNG" alt="" style="width: 500px; height: 280px" />
+															</a>
+														</li>
+														<li class="glide__slide">
+															<a href="images/alumni_website3.PNG" class="image" target="_blank">
+																<img src="images/alumni_website3.PNG" alt="" style="width: 500px; height: 280px" />
+															</a>
+														</li>
+														<li class="glide__slide">
+															<a href="images/alumni_website4.PNG" class="image" target="_blank">
+																<img src="images/alumni_website4.PNG" alt="" style="width: 500px; height: 280px" />
+															</a>
+														</li>   
+													</ul>
+													
+												</div>
+											</div>
+											<div class="inner" style="width: 50%; padding: 0 20px;">
+												<h3>Alumni Website for University</h3>
+												<p>To maintain Alumni record, we developed website with MERN technology. Semantic-UI library was used fascinate the front-end. It has Dashboard to add, remove, search, update alumni members.
+													If you'd like to explore the code on GitHub, <a href="https://github.com/KinzaShaikh/Alumni-Website" target="_blank">visit the project repository</a>.</p>
+											</div>
+										</article>
 										
-										<article>
+										<article style="display: flex;">
+											<div class="glide glide3">
+												<div class="glide__track" data-glide-el="track">
+													<ul class="glide__slides">
+														<li class="glide__slide">
+															<a href="images/RA_1.jpg" class="image" target="_blank">
+																<img src="images/RA_1.jpg" alt="" style="width: 270px; height: 550px" />
+															</a>
+														</li>
+														<li class="glide__slide">
+															<a href="images/RA2.jpg" class="image" target="_blank">
+																<img src="images/RA2.jpg" alt="" style="width: 270px; height: 550px" />
+															</a>
+														</li>
+														<li class="glide__slide">
+															<a href="images/RA3.jpg" class="image" target="_blank">
+																<img src="images/RA3.jpg" alt="" style="width: 270px; height: 550px" />
+															</a>
+														</li>
+														<li class="glide__slide">
+															<a href="images/RA4.jpg" class="image" target="_blank">
+																<img src="images/RA4.jpg" alt="" style="width: 270px; height: 550px" />
+															</a>
+														</li>
+														<li class="glide__slide">
+															<a href="images/RA5.jpg" class="image" target="_blank">
+																<img src="images/RA5.jpg" alt="" style="width: 270px; height: 550px" />
+															</a>
+														</li>
+														<li class="glide__slide">
+															<a href="images/RA6.jpg" class="image" target="_blank">
+																<img src="images/RA6.jpg" alt="" style="width: 270px; height: 550px" />
+															</a>
+														</li>
+														<li class="glide__slide">
+															<a href="images/RA7.jpg" class="image" target="_blank">
+																<img src="images/RA7.jpg" alt="" style="width: 270px; height: 550px" />
+															</a>
+														</li>
+														<li class="glide__slide">
+															<a href="images/RA8.jpg" class="image" target="_blank">
+																<img src="images/RA8.jpg" alt="" style="width: 270px; height: 550px" />
+															</a>
+														</li>
+													</ul>
+													
+												</div>
+											</div>
+											<div class="inner" style="width: 50%; padding: 0 20px;">
+												<h3>Religious Assistant</h3>
+												<p>The Religious Assistant app is designed to meet the requirements of Muslim and Hindu users alike. It provides a range of essential features, such as locating nearby Mosques and Temples, accurate prayer timings for each mosque, tracking of missed prayers and fasts, and Zakat calculations. For children, the app offers engaging games to learn Namaz. Additionally, users can access Qibla direction information, receive alerts for vegetarian and non-vegetarian days, as well as notifications for funeral arrangements, Eid prayers, and donation drives.</p>
+											</div>
+										</article>
+										
+										<article style="display: flex;">
+											<div class="glide glide4">
+												<div class="glide__track" data-glide-el="track">
+													<ul class="glide__slides">
+														<li class="glide__slide">
+															<a href="images/pirate_qr1.jpg" class="image" target="_blank">
+																<img src="images/pirate_qr1.jpg" alt="" style="width: 270px; height: 550px" />
+															</a>
+														</li> 
+														<li class="glide__slide">
+															<a href="images/pirate_qr2.jpg" class="image" target="_blank">
+																<img src="images/pirate_qr2.jpg" alt="" style="width: 270px; height: 550px" />
+															</a>
+														</li> 
+														<li class="glide__slide">
+															<a href="images/pirate_qr3.jpg" class="image" target="_blank">
+																<img src="images/pirate_qr3.jpg" alt="" style="width: 270px; height: 550px" />
+															</a>
+														</li>   
+													</ul>
+													
+												</div>
+											</div>
+											<div class="inner" style="width: 50%; padding: 0 20px;">
+												<h3>Pirate QR</h3>
+												<p>Pirate QR is a web application designed to simplify the process of attaching photos and videos to QR codes. With this app, users can scan any QR code, such as those found on products, and easily associate multimedia content with it. The attached media can then be accessed by anyone who scans the same QR code using the app.
+													If you'd like to explore the project further, <a href="https://qrpirate.onrender.com/" target="_blank">you can visit the link</a>.</p>
+											</div>
+										</article>
+										<!-- <article>
 											<a href="#" class="image"><img src="images/AlumniWebsite.jpeg" alt="" /></a>
 											<div class="inner">
 												<h3>Alumni Website for University</h3>
 												<p>To maintain Alumni record, we developed website with MERN technology. Semantic-UI library was used fascinate the front-end. It has Dashboard to add, remove, search, update alumni members.</p>
-											</article>
+											</article> -->
 
-
-										<article>
+											
+										<!-- <article>
 											<a href="#" class="image"><img src="images/SchoolManagementSystem.PNG" alt="" /></a>
 											<div class="inner">
 												<h3>School Management System</h3>
 												<p>Java Based Desktop App developed for School Management system. Java Swing library was used for GUI with SQL database. It manages students, results, fees and more.</p>
-										</article>
-										<article>
+										</article> -->
+										<!-- <article>
 											<a href="#" class="image"><img src="images/EmployeeManagementSystem.PNG" alt="" /></a>
 											<div class="inner">
 												<h3>Employee Management System</h3>
 												<p>Console based Data structures project developed with C++. It manages employees, payroll, vacation days and so on.</p>
-										</article>
-
-										<article>
-											<a href="#" class="image"><img src="images/ClassDiagram.jpg" alt="" /></a>
-											<div class="inner">
+										</article> -->
+										<article style="display: flex;">
+											<div class="glide glide0">
+												<div class="glide__track" data-glide-el="track">
+													<ul class="glide__slides">
+														<li class="glide__slide">
+															<a href="images/ClassDiagram.jpg" class="image" target="_blank">
+																<img src="images/ClassDiagram.jpg" alt="" style="width: 500px; height: 280px" />
+															</a>
+														</li>   
+													</ul>
+													
+												</div>
+											</div>
+											<div class="inner" style="width: 50%; padding: 0 20px;">
 												<h3>Bank Management System</h3>
-												<p>This is Class Diagram for Banking System. I have also created all other diagrams for Bank Management System</p>
+												<p>
+													The Bank Management System is a comprehensive software solution designed to streamline banking operations and enhance user experience. I have created multiple diagrams, including class diagrams, sequence diagrams, and state diagrams, and more to illustrate the system's functionality and interactions.
+													If you'd like to explore more diagrams, <a href="https://github.com/KinzaShaikh/OOAD/tree/main/Project/BankManagementSystem" target="_blank">visit the link</a>.</p>
+										
+											</div>
 										</article>
 
-										<article>
+										<!-- <article>
 											<a href="#" class="image"><img src="images/AirlinesSystem1.PNG" alt="" /></a>
 											<div class="inner">
 												<h3>Airline Management System</h3>
 												<p>Desktop App developed in C# .NEt framework with Winforms and LINQ. It has login system and manages customers, airlines and passenger. </p>
-										</article>
-							
+										</article> -->
+<!-- 							
 										<article>
 											<a href="#" class="image"><img src="images/ToDo.jpeg" alt="" /></a>
 											<div class="inner">
 												<h3>Responsive Todo App</h3>
 												<p>This is responsive to do app that allows users to add their to do items. Keeps track of user activities in Local storage. Built with HTML, CSS, JS, JQuery and Bootstrap. Contains 3 pages. It is simple but useful.</p>
 						
-										</article>
-										
-										<article>
-											<a href="#" class="image"><img src="images/typing.PNG" alt="" /></a>
-											<div class="inner">
-												<h3>Typing Job</h3>
-												<p>This is one of my typing work. I am a fast typist and proofreader with years of experience. I can provide you Fast Copy Typing services with your desired output in limited amount of time.</p>
-											
-										</article>
-										<article>
-											<a href="#" class="image"><img src="images/intelImage.jpeg" alt="" /></a>
-											<div class="inner">
+										</article> -->
+										<article style="display: flex;">
+											<div class="glide glide0">
+												<div class="glide__track" data-glide-el="track">
+													<ul class="glide__slides">
+														<li class="glide__slide">
+															<a href="images/intelImage.jpeg" class="image" target="_blank">
+																<img src="images/intelImage.jpeg" alt="" style="width: 500px; height: 280px" />
+															</a>
+														</li>   
+													</ul>
+													
+												</div>
+											</div>
+											<div class="inner" style="width: 50%; padding: 0 20px;">
 												<h3>Intel Image Classification</h3>
 												<p>Machine learning project to predict the images of six different classes. Data was pre-processed, visualized and so on using Python and its libraries. CNN algorithm was used, it reached 98% accuracy.</p>
 											
+											</div>
 										</article>
 					
 									</div>
@@ -550,6 +728,40 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-
+			<script>
+				document.getElementById("resumeButton").onclick = function() {
+					window.open("images/Kinza_Kiran.pdf", "_blank");
+				};
+			</script>
+			<script>
+				new Glide('.glide1', {
+					type: 'carousel',
+					perView: 1,
+					autoplay: 3000, // Change slides every 2 seconds (adjust this value to make it quicker)
+					hoverpause: true, // Pause autoplay on hover
+					animationDuration: 500,
+				}).mount();
+				new Glide('.glide2', {
+					type: 'carousel',
+					perView: 1,
+					autoplay: 3000, // Change slides every 2 seconds (adjust this value to make it quicker)
+					hoverpause: true, // Pause autoplay on hover
+					animationDuration: 500,
+				}).mount();
+				new Glide('.glide3', {
+					type: 'carousel',
+					perView: 1,
+					autoplay: 3000, // Change slides every 2 seconds (adjust this value to make it quicker)
+					hoverpause: true, // Pause autoplay on hover
+					animationDuration: 500,
+				}).mount();
+				new Glide('.glide4', {
+					type: 'carousel',
+					perView: 1,
+					autoplay: 3000, // Change slides every 2 seconds (adjust this value to make it quicker)
+					hoverpause: true, // Pause autoplay on hover
+					animationDuration: 500,
+				}).mount();
+			</script>
 	</body>
 </html>
