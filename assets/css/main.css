@@ -2191,7 +2191,7 @@ input, select, textarea {
 			border-radius: 50%;
 			overflow: hidden;
 			background-color: white;
-			height: 60%;
+			height: 50%;
 		}
 
 			.image.avatar img {
